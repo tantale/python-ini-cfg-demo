@@ -1,0 +1,4 @@
+include src/ini_cfg_demo/*.ini
+
+# added by check_manifest.py
+include *.rst
