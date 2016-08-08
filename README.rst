@@ -11,7 +11,7 @@ Python project structure
 
 According to the reference [Packaging and Distributing Projects](https://packaging.python.org/distributing/)
 a (modern) Python project should have the following structure.
-In the package directory, I add a ``__main__.py`` for the main entry pointand a ``IniCfgDemo.ini`` for configuration.
+In the package directory, I add a ``__main__.py`` for the main entry point and a ``IniCfgDemo.ini`` for configuration.
 
 Here is the structure::
 
