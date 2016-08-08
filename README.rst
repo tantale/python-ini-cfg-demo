@@ -11,7 +11,7 @@ Python project structure
 
 According to the reference [Packaging and Distributing Projects](https://packaging.python.org/distributing/)
 a (modern) Python project should have the following structure.
-In the package directory, I add a ``__main__.py`` for the main entry point and a ``IniCfgDemo.ini`` for configuration.
+In the package directory, I add a ``__main__.py`` for the main entry pointand a ``IniCfgDemo.ini`` for configuration.
 
 Here is the structure::
 
@@ -63,26 +63,26 @@ To check your configuration, run the following command::
 Default configuration for logging
 ---------------------------------
 
-The ``IniCfgDemo.ini`` store the default configuration for logging.
+The ``IniCfgDemo.ini`` store the default configuration for logging::
 
     [formatters]
     keys=default
-    
+
     [formatter_default]
     format=%(asctime)s:%(levelname)s:%(message)s
     class=logging.Formatter
-    
+
     [handlers]
     keys=console
-    
+
     [handler_console]
     class=logging.StreamHandler
     formatter=default
     args=tuple()
-    
+
     [loggers]
     keys=root
-    
+
     [logger_root]
     level=DEBUG
     formatter=default
