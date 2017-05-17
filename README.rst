@@ -139,7 +139,7 @@ Here is the source code of ``__main__.py``::
         try:
             logging.config.fileConfig(ini2_path)
         except KeyError:
-            logging.warning('Bad logging configuration in "{ini2_path}...'.format(ini2_path=ini2_path))
+            logging.warning('Bad or missing logging configuration in "{ini2_path}...'.format(ini2_path=ini2_path))
     
         logging.info("Running...")
     
@@ -165,7 +165,7 @@ Then you can test your application::
     
     2016-07-16 15:47:35,613:INFO:Starting...
     2016-07-16 15:47:35,613:DEBUG:Reading configuration from "/Users/my_name/Library/Application Support/IniCfgDemo...
-    2016-07-16 15:47:35,613:WARNING:Bad logging configuration in "/Users/my_name/Library/Application Support/IniCfgDemo...
+    2016-07-16 15:47:35,613:WARNING:Bad or missing logging configuration in "/Users/my_name/Library/Application Support/IniCfgDemo...
     2016-07-16 15:47:35,613:INFO:Running...
 
 *Note: the ``ini_cfg_demo`` was launched in a Mac OSX*.

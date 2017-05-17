@@ -40,9 +40,11 @@ def run_ini_cfg_demo():
     try:
         logging.config.fileConfig(ini2_path)
     except KeyError:
-        logging.warning('Bad logging configuration in "{ini2_path}...'.format(ini2_path=ini2_path))
+        logging.warning('Bad or missing logging configuration in "{ini2_path}...'.format(ini2_path=ini2_path))
 
     logging.info("Running...")
+    for i in range(20):
+        logging.info(f"Item {i}")
 
 
 if __name__ == '__main__':
